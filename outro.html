@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENU</title>
+	<style>
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 5px;
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.button:hover .menu {
+			display: block;
+		}
+
+		.menu {
+			display: none;
+			position: absolute;
+			top: 40px;
+			left: 0;
+			padding: 10px;
+			border-radius: 5px;
+			background-color: #333;
+			color: #fff;
+			z-index: 1;
+		}
+
+		.menu ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.menu li {
+			padding: 5px 0;
+		}
+
+		.menu a {
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="button">
+		MENU
+		<div class="menu">
+			<ul>
+				<li><button class="1" onclick="enviarDados()">Calculadora</button></li>
+				<li><button class="2" onclick="enviarDados_2()">Jogo da velha</button></li>
+			</ul>
+		</div>
+	</div>
+    <script>
+        function enviarDados(){
+            window.location = "calc.index.html";
+        }
+		function enviarDados_2(){
+            window.location = "indexttt.html";
+        }
+    </script>
+</body>
+</html>
